@@ -1,0 +1,93 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* 茶ステッチをつける---------------------------------------------- */
+.box53{
+    margin: 2em auto;
+    padding:2em;/*内側余白*/
+    position: relative;
+    padding:1.5em !important;
+    z-index: 0;
+    background-color:#e7f7fe;/*背景色*/
+    }
+    
+    .box53:before{
+    position: absolute;
+    border: 2px dashed #827452;/*破線の太さ・色*/
+    content: '';
+    display: block;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin:5px;
+    z-index: -1;
+    border-radius:10px;
+    }
+
+    .bg_pattern {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #baceea;
+        opacity: 0.4;
+        z-index: -1;
+      }
+      .Lines_v4 {
+        background-size: 40px 40px;
+        background-image:  repeating-linear-gradient(to right, #bdd3eb, #c2e0e9 2px, #b9d0e9 2px, #d7e9f9);
+      }
+
+      .header-1 {
+        box-sizing: border-box;
+        width: 100%;
+      }
+      
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding: 0 2em;
+      }
+
+      .button-7 {
+        display: inline-block;
+        padding: 0.4em 1.6em;
+        font-size: 0.8em;
+        color: #00b5ad;
+        text-decoration: none;
+        border: 1px solid #00b5ad;
+        border-radius: 3px;
+        transition: 0.3s;
+      }
+      
+      .button-7:hover {
+        color: #fff;
+        background: #00b5ad;
+      }
+      
+      .home-icon {
+        width: 14px;
+        margin-right: 0.4em;
+        fill: #00b5ad;
+        transition: 0.3s;
+        transform: translateY(1px);
+      }
+      
+      .button-7:hover > .home-icon {
+        fill: #fff;
+      }
+
+      html, body {
+    height: 100%;
+  }
+  
+  .full-page {
+    height: 100%;
+  
+    background: rgba(203, 251, 243, 0.751);
+  }
